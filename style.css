@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(back.jpg);
+    background-size: cover; /* Makes the background image cover the entire element */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 350px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    color: #333;
+}
+
+h1 span {
+    font-size: 1.2em;
+}
+
+form {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    margin-right: 10px;
+    padding-left: 20px;
+    font-size: 1em;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #ff5722;
+    color: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #e64a19;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background: linear-gradient(45deg, #ff0047, #fbc2eb);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+}
+
+li.completed label {
+    text-decoration: line-through;
+    color: #888;
+}
+
+li input[type="checkbox"] {
+    margin-right: 10px;
+    transform: scale(1.5);
+    cursor: pointer;
+}
+
+li label {
+    flex: 1;
+    text-align: left;
+    color: #fff;
+}
+
+li .task-content {
+    display: flex;
+    align-items: center;
+    flex: 0.5;
+}
+
+li .task-content input[type="checkbox"] {
+    margin: 0;
+    margin-right: 10px;
+}
+
+li button {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+li button:hover {
+    color: #f8d7da;
+}
+
+li .fa-trash-alt {
+    font-size: 1.2em;
+}
